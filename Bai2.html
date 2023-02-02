@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container" >
+        <div><input type="text" placeholder="Nhập số thứ nhất" id="inp1"></div>
+        <div><input type="text" placeholder="Nhập số thứ 2" id="inp2"></div>
+        <div class="but"><button onclick="show()">+</button></div>
+        <div id="kq"></div>
+    </div>
+
+
+
+    <script >
+        
+        function show(){
+            let number1 = Number(document.getElementById("inp1").value);       
+            let number2 = Number(document.getElementById("inp2").value);
+            document.getElementById("kq").innerHTML = number1+number2;
+        }
+
+    </script>
+</body>
+</html>
